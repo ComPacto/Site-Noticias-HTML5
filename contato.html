@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title> League News - Empresa focada em compartilhar as notícias mais recentes de League of Legends </title>
+		<meta charset="UTF-8">
+		<meta name="description" content="Página que tem como foco apresentação de uma empresa de notícias relacionadas ao universo de League of Legends">
+		<meta name="author" content="Müller Gonçalves e Thiago Silva">
+		<meta name="keywords" content="League of Legends, Notícias, News, Jogos, Empresa">
+		<meta name="viewport" content="width=device-width, initial scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+		<link rel="shortcut icon" href="images/logo.png">
+		<script src="http://arquivos.weblibras.com.br/auto/wl-min.js"></script>
+		<script>
+			var wl = new WebLibras();
+		</script>
+	</head>
+	<body>
+		<div id="geral">
+			<nav style="margin-bottom:30px" class="navbar navbar-inverse navbar-fixed-top">
+			<a class="navbar-brand" href="index.html">
+				<span><img id="logo" src="images/logo.png" width="40" height="40" class="d-inline-block align-top" alt="Logo do WebSite com as letra LN"></span>
+			</a>
+			<div class="nav-header">
+				<a class="navbar-brand" href="index.html">  </a>
+			</div>
+				<ul class="nav navbar-nav no-wlauto">
+					<li><a href="index.html"><span class="glyphicon glyphicon-home"></span> Página Inicial </a></li>
+					<li><a href="links.html"><span class="glyphicon glyphicon-globe"></span> Links Úteis </a></li>
+					<li class="active"><a href="contato.html"><span class="glyphicon glyphicon-comment"></span> Contato </a></li>
+					<li><a href="anuncios.html"><span class="glyphicon glyphicon-bullhorn"></span> Anuncie </a></li>
+				</ul>
+			<div id="form">
+				<form class="navbar-form navbar-left" action="">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Buscar...">
+					</div>
+						<button type="submit" class="btn btn-danger"> Buscar </button>
+				</form>	
+			</div>
+			</nav>
+			<aside class="esquerda">
+				<img id="adsense" class="img-responsive" src="images/ad.jpg" alt="Adsense">
+			</aside>
+			<section><br>
+			<h1> Formulário de Contato </h1>
+			<form method="post" name="form" action="/action_page.php" id="formi" onSubmit="return validar()">
+				<fieldset class="maior">
+					<legend class="titulo">
+						Contate-nos!
+					</legend>
+						<fieldset class="caixa">
+							<legend> Dados da Empresa </legend>
+							<label id="pessoa"> Pessoa: </label><br>
+							<input type="radio" name="pessoa" value="F"> Fisíca 
+							<input type="radio" name="pessoa" value="J"> Jurídica <br>
+							<label id="nomeEmpresa">Nome da Empresa:</label> 
+							<input type="text" name="nome" size="30" required="required" placeholder="Digite aqui"><br>
+							<label id="cidade">Cidade:</label>
+							<input type="text" name="cidade" size="20" required="required"><br>
+							<label>Estado:</label>
+							<select id="estado" name="estado">
+								<option value="estado">Selecione o Estado</option> 
+								<option value="ac">Acre</option> 
+								<option value="al">Alagoas</option> 
+								<option value="am">Amazonas</option> 
+								<option value="ap">Amapá</option> 
+								<option value="ba">Bahia</option> 
+								<option value="ce">Ceará</option> 
+								<option value="df">Distrito Federal</option> 
+								<option value="es">Espírito Santo</option> 
+								<option value="go">Goiás</option>
+								<option value="ma">Maranhão</option>
+								<option value="mt">Mato Grosso</option> 
+								<option value="ms">Mato Grosso do Sul</option> 
+								<option value="mg">Minas Gerais</option> 
+								<option value="pa">Pará</option> 
+								<option value="pb">Paraíba</option> 
+								<option value="pr">Paraná</option> 
+								<option value="pe">Pernambuco</option> 
+								<option value="pi">Piauí</option> 
+								<option value="rj">Rio de Janeiro</option> 
+								<option value="rn">Rio Grande do Norte</option> 
+								<option value="ro">Rondônia</option> 
+								<option value="rs">Rio Grande do Sul</option> 
+								<option value="rr">Roraima</option> 
+								<option value="sc">Santa Catarina</option> 
+								<option value="se">Sergipe</option> 
+								<option value="sp">São Paulo</option> 
+								<option value="to">Tocantins</option> 
+							</select><br>
+						<label id="email">E-mail:</label>
+						<input type="email" required="required" name="email">&nbsp;&nbsp;&nbsp;&nbsp;<br>
+						<label id="mensagem"> Mensagem: </label><br>
+						<textarea name="cursos" cols="38" rows="6" placeholder="Digite aqui"></textarea>
+					</fieldset>
+					<div class="botao">
+						<input type="submit" name="Enviar" id="botao">
+						<input type="reset" name="Limpar" id="botao2">
+					</div><br>
+				</fieldset>
+			</form><br>
+			</section>
+			<footer class="rodape">
+					<a target="_blank" href="http://www.facebook.com.br"> <img src="images/face.png" alt="facebook logo"></a> 
+					<a target="_blank" href="http://www.twitter.com.br"> <img src="images/twitter.png" alt="twitter logo"></a> 
+					<a target="_blank" href="https://www.instagram.com/?hl=pt-br"><img src="images/instagram.png" alt="instagram logo"></a>
+				<p> League News <span id="linksite">www.leaguenews.com.br</span> | Todos os direitos reservados&reg; 2018</p>
+			</footer>
+		</div>
+	</body>
+</html>	
